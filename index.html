@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Şiirler Dünyası</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Şiirler Dünyası</h1>
+            <p>Güzel şiirleri paylaş ve keşfet!</p>
+        </header>
+
+        <section id="poemForm">
+            <h2>Yeni Şiir Ekle</h2>
+            <form id="addPoemForm">
+                <label for="title">Başlık:</label>
+                <input type="text" id="title" name="title" required>
+                <label for="poem">Şiir:</label>
+                <textarea id="poem" name="poem" rows="5" required></textarea>
+                <button type="submit">Ekle</button>
+            </form>
+        </section>
+
+        <section id="poemList">
+            <h2>Paylaşılan Şiirler</h2>
+            <ul id="poemItems">
+                <!-- Şiirler burada listelenecek -->
+            </ul>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
